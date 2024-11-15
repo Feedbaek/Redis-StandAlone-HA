@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: demo
+
+  cache:
+    cache-names: cache
+    type: redis
+
+  session:
+    redis:
+      namespace: session-namespace
+
+server:
+  servlet:
+    session:
+      cookie:
+        name: JSESSIONID
