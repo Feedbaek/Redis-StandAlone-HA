@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: demo
+
+  session:
+    redis:
+      namespace: session-name
+
+server:
+  servlet:
+    session:
+      cookie:
+        name: JSESSIONID
+  port: 8081
