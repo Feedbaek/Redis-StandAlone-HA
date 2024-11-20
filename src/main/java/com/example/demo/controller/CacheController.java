@@ -14,15 +14,27 @@ public class CacheController {
 
     private final CacheService cacheService;
 
-    @GetMapping("/get")
-    public String get() {
+    @GetMapping("/get1")
+    public String get1() {
         String id = "1";
         return cacheService.findAll(id);
     }
 
-    @PostMapping("/put")
-    public String put() {
+    @GetMapping("/get2")
+    public String get2() {
+        String id = "2";
+        return cacheService.findAll(id);
+    }
+
+    @PostMapping("/put1")
+    public String put1() {
         String id = "1";
+        return cacheService.save(id);
+    }
+
+    @PostMapping("/put2")
+    public String put2() {
+        String id = "2";
         return cacheService.save(id);
     }
 }

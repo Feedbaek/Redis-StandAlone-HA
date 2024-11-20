@@ -9,9 +9,12 @@ spring:
   session:
     redis:
       namespace: session-namespace
+      flush-mode: on_save
 
 server:
   servlet:
     session:
       cookie:
         name: JSESSIONID
+
+
